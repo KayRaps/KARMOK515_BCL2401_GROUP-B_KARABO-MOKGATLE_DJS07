@@ -19,7 +19,7 @@ To use the meme generator:
 
 - HTML
 - CSS
-- JavaScript (ES6+)
+- JavaScript
 - React
 
 ## Acknowledgements
