@@ -11,6 +11,13 @@ export default function Meme() {
                         className="form--input"
                     />    
                 </div>
+                <div>
+                    <input
+                       type="text"
+                       placeholder="and take my money"
+                       className="form--input"
+                    />   
+                </div>
             </form>
         </main>
     )
