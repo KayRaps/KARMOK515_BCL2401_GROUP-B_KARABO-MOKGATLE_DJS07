@@ -18,7 +18,13 @@ export default function Meme() {
                        className="form--input"
                     />   
                 </div>
+                <button
+                   className="form--button"
+                >
+                   Get a new Meme image 🖼
+                </button>   
             </form>
         </main>
     )
+    
 }
