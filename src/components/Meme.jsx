@@ -6,6 +6,9 @@ export default function Meme() {
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
+    const [allMemes, setAllMemes] = React.useState([])
+
+    
     return (
         <main>
             <form className="form">
