@@ -8,5 +8,7 @@ export default function Header() {
                className = "header--image"
             />   
         </header>
+        <h2 className = "header--title">Meme <Generator></Generator></h2>
+        <h4 className = "header--project">React Course - Project 3</h4>
     )
 }
