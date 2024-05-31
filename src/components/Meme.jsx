@@ -26,32 +26,46 @@ export default function Meme() {
         }))
         
     }
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
+    }
     
 
     return (
         <main>
-            <form className="form">
-                <div>
-                    <input
-                        type="text"
-                        placeholder="Shut up"
-                        className="form--input"
-                    />    
-                </div>
-                <div>
-                    <input
-                       type="text"
-                       placeholder="and take my money"
-                       className="form--input"
-                    />   
-                </div>
-                <button
-                   className="form--button"
+            <div className="form">
+                <input 
+                    type="text"
+                    placeholder="Top text"
+                    className="form--input"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
+                />
+                <button 
+                    className="form--button"
+                    onClick={getMemeImage}
                 >
-                   Get a new Meme image 🖼
-                </button>   
-            </form>
+                    Get a new meme image 🖼
+                </button>
+            </div>
+            <div className="meme">
+                <img src={meme.randomImage} className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
         </main>
     )
-
 }
