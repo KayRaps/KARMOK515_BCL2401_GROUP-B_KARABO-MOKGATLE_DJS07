@@ -1,5 +1,5 @@
 {
-  "name": "studentno-classcode-group-name-surname-djs07",
+  "name": "karmok515-bcl2401-group-b-karabo-mokgatle-djs07",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,6 +21,6 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "vite": "^5.2.8"
   }
 }
